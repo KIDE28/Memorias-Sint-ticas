@@ -70,3 +70,8 @@ class Particula {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+function mousePressed() {
+  if (getAudioContext().state !== 'running') {
+    getAudioContext().resume();
+  }
+}
