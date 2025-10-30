@@ -65,7 +65,6 @@ class Particula {
   desaparecer() {
     return this.transparencia < 0;
   }
-}
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
